@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Creative World | Portfolio</title>
+
+  <!-- CSS 연결 -->
+  <link rel="stylesheet" href="./css/style.css">
+
+  <!-- JavaScript 연결 -->
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- 상단 메뉴 -->
+  <header class="header">
+    <a href="#home" class="logo">★ MY CREATIVE WORLD ★</a>
+
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#works">Works</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero-section">
+      <div class="hero-container">
+          <!-- 기존 텍스트 및 오측 캐릭터 콘텐츠 -->
+      </div>
+    </section>
+
+    <!-- 메인 소개 -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">CHARACTER · ILLUSTRATION</p>
+
+        <h1>
+          안녕하세요! 저는<br>
+          <span>창작캐릭터 디자이너입니다!</span>
+        </h1>
+
+        <p class="intro">
+          캐릭터와 그림으로 나만의 이야기를 만드는
+          디자이너입니다.
+        </p>
+
+        <a href="#works" class="main-button">
+          작품 구경하기 ↗
+        </a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="./images/캐릭터 - 바다(2).png"
+          alt="대표 캐릭터 일러스트"
+        >
+        <span class="sticker">MY ART!</span>
+      </div>
+
+    </section>
+
+    <div style="text-align: center; margin: 30px 0;">
+      <p>캐릭터의 자세한 정보는 이 버튼을 클릭해보세요!</p>
+      <a href="index-3.html" class="main-button">나의 개인 포트폴리오로 이동!</a>
+    </div>
+
+    <!-- 작품 갤러리 -->
+    <section id="works" class="works section">
+      <div class="section-heading">
+        <p class="eyebrow">나의 프로젝트</p>
+        <h2>나의 멋진 자료들 <span>♥</span></h2>
+        <p>지금까지 작업하고 생성한 저의 자료들을 한번 보세요!</p>
+      </div>
+
+      <!-- 작품 카테고리 버튼 -->
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">
+          All
+        </button>
+
+        <button class="filter-btn" data-filter="user">
+          User Research
+        </button>
+
+        <button class="filter-btn" data-filter="portfolio">
+          Portfolio
+        </button>
+
+        <button class="filter-btn" data-filter="book">
+          Book Cover
+        </button>
+
+        <button class="filter-btn" data-filter="card news">
+          Card News
+        </button>
+
+        <button class="filter-btn" data-filter="banner">
+          Banner
+        </button>
+
+        <button class="filter-btn" data-filter="app">
+          App Design
+        </button>
+      </div>
+
+      
+    <!-- <section class="portfolio-gallery">
+        <a href="index-4.html" class="thumbnail-card">
+          <img src="images/사용자조사분석(썸네일용).png" alt="캐릭터로그">
+          <h3>캐릭터로그</h3>
+        </a>
+
+        <a href="index-3.html" class="thumbnail-card">
+          <img src="images/캐릭터 - 바다(썸네일용).png" alt="캐릭터 일러스트 ♥바다♥">
+          <h3>캐릭터 일러스트 ♥바다♥</h3>
+        </a>
+
+        <a href="index-7.html" class="thumbnail-card">
+          <img src="images/카드뉴스썸네일.png" alt="카드뉴스 ★멜로별★">
+          <h3>카드뉴스 ★멜로별★</h3>
+        </a>
+
+        <a href="index-6.html" class="thumbnail-card">
+          <img src="images/북커버썸네일1.jpg" alt="북커버">
+          <h3>북커버</h3>
+        </a>
+
+        <a href="index-5.html" class="thumbnail-card">
+          <img src="images/명함썸네일.jpg" alt="명함">
+          <h3>명함</h3>
+        </a>
+
+        <a href="index-8.html" class="thumbnail-card">
+          <img src="images/배너디자인썸네일.png" alt="배너">
+          <h3>배너</h3>
+        </a>
+    </section> -->
+
+
+      <!-- 작품 카드 -->
+      <!-- <div class="project-grid">
+
+        <article class="project-card" data-category="character">
+          <img
+            src="./images/캐릭터 - 바다(1).png"
+            alt="오리지널 캐릭터 디자인"
+          >
+          <div class="card-info">
+            <span class="tag pink">CHARACTER</span>
+            <h3>소녀 바다와 벨루가 친구 모찌</h3>
+            <p>나만의 오리지널 캐릭터 디자인</p>
+          </div>
+        </article> -->
+
+        <!-- 사용자조사분석 -->
+        <a href="index-4.html" class="project-link">
+        <article class="project-card" data-category="user">
+
+          <div class="project-image">
+            <img
+              src="./images/사용자조사분석(썸네일용).png"
+              alt="사용자조사분석"
+            >
+          </div>
+
+          <div class="card-info">
+            <span class="tag green">USER RESEARCH</span>
+            <h3>사용자조사분석</h3>
+            <p>캐릭터 관련에 여러가지로 참고할 동기들</p>
+          </div>
+
+        </article>
+      </a>
+
+        <!-- <article class="project-card" data-category="illustration">
+          <img
+            src="./images/캐릭터 - 바다(3).png"
+            alt="컬러풀 일러스트 작품"
+          >
+          <div class="card-info">
+            <span class="tag green">ILLUSTRATION</span>
+            <h3>캐릭터 소개1</h3>
+            <p>색감과 분위기를 표현한 일러스트</p>
+          </div>
+        </article> -->
+
+        
+      <!-- 캐릭터 소개 1 -->
+      <a href="index-3.html" class="project-link">
+        <article class="project-card" data-category="portfolio">
+
+          <div class="project-image">
+            <img
+              src="./images/캐릭터 - 바다(1).png"
+              alt="개인 캐릭터 포트폴리오"
+            >
+          </div>
+
+          <div class="card-info">
+            <span class="tag green">OC PORTFOLIO</span>
+            <h3>개인 캐릭터 포트폴리오</h3>
+            <p>색감과 분위기를 표현한 일러스트</p>
+          </div>
+
+        </article>
+      </a>
+
+
+
+      <!-- 카드뉴스 디자인 -->
+      <a href="index-7.html" class="project-link">
+        <article class="project-card" data-category="card news">
+
+          <div class="project-image">
+            <img
+              src="./images/카드뉴스썸네일.png"
+              alt="카드뉴스"
+            >
+          </div>
+
+          <div class="card-info">
+            <span class="tag green">BOOK COVER</span>
+            <h3>멜로별 카드뉴스</h3>
+            <p>귀여운 친구 '멜로별'과 함께하는 카드뉴스!</p>
+          </div>
+
+        </article>
+      </a>
+
+      <a href="index-7(1).html" class="project-link">
+        <article class="project-card" data-category="card news">
+
+          <div class="project-image">
+            <img
+              src="./images/캐릭터 - 바다(썸네일용).png"
+              alt="카드뉴스"
+            >
+          </div>
+
+          <div class="card-info">
+            <span class="tag green">BOOK COVER</span>
+            <h3>바다 카드뉴스</h3>
+            <p>미래의 부산에 친구 '바다'와 함께하는 카드뉴스!</p>
+          </div>
+
+        </article>
+      </a>
+
+        
+      <!-- 04. 북커버 디자인 -->
+      <!-- <article class="project-card" data-category="book">
+        <img
+           src="./images/캐릭터 북커버 이미지.jpg"
+           alt="북커버 디자인"
+        >
+        <div class="card-info">
+          <span class="tag pink">BOOK COVER</span>
+          <h3>나의 북커버 디자인</h3>
+          <p>일러스트와 타이포그래피를 활용한 책 표지 디자인</p>
+        </div>
+      </article> -->
+
+      <!-- 북커버 디자인 -->
+      <a href="index-6.html" class="project-link">
+        <article class="project-card" data-category="book">
+
+          <div class="project-image">
+            <img
+              src="./images/북커버썸네일.png"
+              alt="명함디자인"
+            >
+          </div>
+
+          <div class="card-info">
+            <span class="tag green">BOOK COVER</span>
+            <h3>북커버디자인</h3>
+            <p>나의 개성적인 모습의 북커버디자인</p>
+          </div>
+
+        </article>
+      </a>
+
+      <!-- 05. 패키지 디자인 -->
+      <!-- <article class="project-card" data-category="package">
+        <img
+          src="./images/패키지디자인1.png"
+          alt="패키지디자인"
+        >
+        <div class="card-info">
+          <span class="tag yellow">PACKAGE</span>
+          <h3>패키지디자인</h3>
+          <p>나만의 독창적인 개성을 살린 패키지</p>
+        </div>
+      </article> -->
+
+      <!-- 패키지 디자인 -->
+      <a href="index-5.html" class="project-link">
+        <article class="project-card" data-category="Package">
+
+          <div class="project-image">
+            <img
+              src="./images/패키지디자인1.png"
+              alt="명함디자인"
+            >
+          </div>
+
+          <div class="card-info">
+            <span class="tag green">PACKAGE</span>
+            <h3>명함디자인</h3>
+            <p>나의 개성적인 모습의 명함</p>
+          </div>
+
+        </article>
+      </a>
+
+      <!-- 배너 디자인 -->
+      <a href="index-8.html" class="project-link">
+        <article class="project-card" data-category="banner">
+
+          <div class="project-image">
+            <img
+              src="./images/배너디자인썸네일.png"
+              alt="명함디자인"
+            >
+          </div>
+
+          <div class="card-info">
+            <span class="tag green">BANNER</span>
+            <h3>배너디자인</h3>
+            <p>깔끔하게 작업한 나의 멋진 배너</p>
+          </div>
+
+        </article>
+      </a>
+
+      <!-- 앱 디자인 -->
+      <a href="index-9.html" class="project-link">
+        <article class="project-card" data-category="app">
+
+          <div class="project-image">
+            <img
+              src="./images/캐릭터 UI 이미지.jpg"
+              alt="앱디자인"
+            >
+          </div>
+
+          <div class="card-info">
+            <span class="tag green">APP DESIGN</span>
+            <h3>캐릭터 앱디자인</h3>
+            <p>AI로 세련되고 멋지게 잘 생성한 캐릭터 앱디자인</p>
+          </div>
+
+        </article>
+      </a>
+
+      <!-- 06. 앱 디자인
+      <article class="project-card" data-category="app">
+        <img
+          src="./images/캐릭터 UI 이미지.jpg"
+          alt="모바일 앱 디자인"
+        >
+        <div class="card-info">
+          <span class="tag green">APP DESIGN</span>
+          <h3>캐릭터 액티브 앱</h3>
+          <p>캐릭터 정보를 편리하게 관리하는 모바일 앱 UI</p>
+        </div>
+      </article> -->
+
+      </div>
+    </section>
+
+    
+      <!-- VIDEO PORTFOLIO -->
+      <section id="video" class="section video-section">
+        <div class="section-heading">
+          <p class="eyebrow">MOTION & MEDIA</p>
+          <h2>나의 동영상 ✦</h2>
+          <p>캐릭터와 디자인을 영상으로 소개합니다.</p>
+        </div>
+
+        <div class="video-card">
+          <video controls preload="metadata" poster="./images/character01.jpg">
+            <source src="./videos/캐릭터 소개 영상.mp4" type="video/mp4">
+            브라우저에서 이 영상을 재생할 수 없습니다.
+          </video>
+
+          <div class="card-info">
+            <span class="tag pink">CHARACTER VIDEO</span>
+            <h3>나의 캐릭터 영상</h3>
+            <p>귀여운 캐릭터의 귀여운 모습 등장♥</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="video-card">
+          <video controls preload="metadata" poster="./images/character01.jpg">
+            <source src="./videos/캐릭터음식먹방.mp4" type="video/mp4">
+            브라우저에서 이 영상을 재생할 수 없습니다.
+          </video>
+
+          <div class="card-info">
+            <span class="tag pink">CHARACTER VIDEO</span>
+            <h3>나의 캐릭터의 일상</h3>
+            <p>여행하면서 맛있는 음식까지 먹방을 하는 캐릭터의 즐거운 일상!</p>
+          </div>
+        </div>
+      </section>
+
+
+    <!-- 자기소개 -->
+    <section id="about" class="about section">
+      <div class="about-box">
+        <p class="eyebrow">ABOUT ME</p>
+        <h2>Ideas into Visual Stories.</h2>
+
+        <p>
+          저는 캐릭터 디자인과 일러스트에 관심이 있으며,
+          다양한 색상과 아이디어를 활용해 개성 있는 작품을
+          만드는 것을 목표로 합니다.
+        </p>
+
+        <p>
+          이번 포트폴리오를 통해 지금까지의 작업 과정과
+          디자인 결과물을 소개하고자 합니다.
+        </p>
+      </div>
+    </section>
+
+    <!-- 연락처 -->
+    <section id="contact" class="contact section">
+      <p class="eyebrow">LET'S CONNECT</p>
+      <h2>Thanks for visiting! ✿</h2>
+      <p>제 포트폴리오를 봐주셔서 감사합니다.</p>
+      <a href="#home" class="main-button">맨 위로 ↑</a>
+    </section>
+  </main>
+
+  <!-- 하단 -->
+  <footer class="footer">
+    <p>© 2026 My Creative World. Personal Portfolio.</p>
+  </footer>
+</body>
+</html>
