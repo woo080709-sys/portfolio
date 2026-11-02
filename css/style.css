@@ -1,0 +1,713 @@
+.hero { /* HTML의 class="hero"와 일치시킴 */
+    position: relative;
+    background-image: 
+        linear-gradient(rgba(240, 234, 252, 0.85), rgba(240, 234, 252, 0.85)),
+        url('../images/패키지디자인2.png'); /* CSS 파일 위치 기준 상대 경로 또는 절대 경로 사용 */
+
+    background-size: cover;        
+    background-position: center;   
+    background-repeat: no-repeat; 
+    padding: 80px 0;
+}
+
+/* 콘텐츠들이 배경보다 위에 보이도록 설정 */
+.hero-container {
+    position: relative;
+    z-index: 2;
+}
+
+
+.link-center {
+    text-align: center;
+    margin: 30px 0;
+}
+
+
+
+
+.filter-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 30px auto 40px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    display: inline-block;
+    padding: 10px 24px;
+    border: 1px solid #e4dce8;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #29213f;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background-color: #302442;
+    color: #ffffff;
+}
+
+
+
+
+
+/* 포트폴리오 카드 이미지 */
+.card img {
+    width: 100%;
+    height: 300px;
+
+    /* 이미지 전체 보이기 */
+    object-fit: contain;
+    background-size: cover;
+
+    /* 이미지 중앙 정렬 */
+    object-position: center center;
+
+    display: block;
+}
+
+
+
+/* 썸네일 3개를 가로로 배치 */
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: start;
+}
+
+/* 개별 썸네일 카드 */
+.thumbnail-card {
+    display: block;
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #ffffff;
+    text-decoration: none;
+    color: #302942;
+}
+
+/* 이미지 크기 조정 */
+.thumbnail-card img {
+    display: block;
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* 썸네일 제목 */
+.thumbnail-card h3 {
+    margin: 16px;
+    font-size: 20px;
+}
+
+/* 태블릿 화면 */
+@media (max-width: 900px) {
+    .portfolio-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* 모바일 화면 */
+@media (max-width: 600px) {
+    .portfolio-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
+/* 카드 이미지 영역 */
+.card-image {
+    width: 100%;
+    height: 360px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+    background-color: #35a8dc;
+}
+
+/* 캐릭터 이미지 전체 표시 */
+.card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain !important;
+    object-position: center center;
+
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+
+
+
+/* 링크 기본 스타일 */
+.project-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 22px;
+  height: 100%;
+}
+
+/* 프로젝트 카드 */
+.project-link .project-card {
+  height: 100%;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 22px;
+  box-shadow: 0 5px 20px rgba(35, 48, 77, 0.06);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+
+/* 카드 이미지 영역 */
+.card-image {
+    width: 100%;
+    height: 300px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    overflow: hidden;
+}
+
+/* 카드 내부 이미지 */
+.card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    display: block;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    display: block;
+}
+
+
+/* 카드 내부 텍스트 */
+.project-link .card-info {
+  padding: 22px 20px 24px;
+}
+
+.project-link .tag {
+  display: inline-block;
+  margin-bottom: 12px;
+  padding: 7px 11px;
+  border-radius: 20px;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+.project-link .tag.green {
+  color: #176447;
+  background-color: #d9f4e7;
+}
+
+.project-link .card-info h3 {
+  margin: 0 0 12px;
+  color: #29243d;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.project-link .card-info p {
+  margin: 0;
+  color: #8b7da9;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+/* 마우스를 올렸을 때 */
+.project-link:hover .project-card {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(35, 48, 77, 0.13);
+}
+
+.project-link:hover .project-image img {
+  transform: scale(1.04);
+}
+
+/* 키보드로 선택했을 때 */
+.project-link:focus-visible {
+  outline: 3px solid #79bdf0;
+  outline-offset: 4px;
+}
+
+/* 모바일 화면 */
+@media (max-width: 600px) {
+  .project-link .project-image {
+    height: 190px;
+  }
+
+  .project-link .card-info {
+    padding: 18px 16px 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 기본 설정 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, "Malgun Gothic", sans-serif;
+  background-color: #fffaf4;
+  color: #302744;
+  line-height: 1.7;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* 상단 메뉴 */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 8%;
+  background-color: #fffaf4;
+}
+
+.logo {
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.nav {
+  display: flex;
+  gap: 24px;
+}
+
+.nav a {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #f06c83;
+}
+
+/* 메인 화면 */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+  padding: 75px 8%;
+  background-color: #f1eaff;
+}
+
+.hero-text,
+.hero-image {
+  flex: 1;
+  min-width: 0;
+}
+
+.eyebrow {
+  color: #e96983;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 15px;
+}
+
+.hero h1 {
+  font-size: clamp(36px, 5vw, 60px);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero h1 span {
+  color: #e96983;
+}
+
+.intro {
+  color: #665c76;
+  margin-bottom: 28px;
+}
+
+.main-button {
+  display: inline-block;
+  background-color: #302744;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.main-button:hover {
+  background-color: #e96983;
+  transform: translateY(-2px);
+}
+
+.hero-image {
+  position: relative;
+  max-width: 480px;
+}
+
+.hero-image img {
+  height: 350px;
+  border-radius: 28px;
+  border: 6px solid white;
+}
+
+.sticker {
+  position: absolute;
+  right: -15px;
+  bottom: -15px;
+  background-color: #ffdc72;
+  color: #302744;
+  padding: 12px 20px;
+  border-radius: 50%;
+  font-weight: 800;
+  transform: rotate(10deg);
+}
+
+
+
+/* 메인 영역 배경 이미지 */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 45px;
+
+  padding: 75px 8%;
+  min-height: 500px;
+
+  /* 배경 이미지 */
+  background-image: url("../images/캐릭터_포트폴리오_홍보_이미지.jpg");
+
+  /* 영역 전체를 이미지로 채우기 */
+  background-size: cover;
+
+  /* 이미지 중앙 정렬 */
+  background-position: center;
+
+  /* 이미지 반복 방지 */
+  background-repeat: no-repeat;
+}
+
+.hero {
+  background-image:
+    linear-gradient(
+      rgba(241, 234, 255, 0.35),
+      rgba(241, 234, 255, 0.35)
+    ),
+    url("../images/main-background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+
+.hero {
+  background-image:
+    linear-gradient(
+      rgba(241, 234, 255, 0.35),
+      rgba(241, 234, 255, 0.35)
+    ),
+    url("../images/main-background.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+/* 공통 섹션 */
+.section {
+  padding: 85px 8%;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-heading h2,
+.about h2,
+.contact h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  line-height: 1.3;
+  margin-bottom: 15px;
+}
+
+.section-heading h2 span {
+  color: #e96983;
+}
+
+.section-heading > p:last-child {
+  color: #756b83;
+}
+
+/* 필터 버튼 */
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.filter-btn {
+  background-color: white;
+  color: #302744;
+  border: 1px solid #e5ddeb;
+  padding: 9px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #302744;
+  color: white;
+}
+
+/* 작품 카드 */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.project-card {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 22px #3027440d;
+  transition: transform 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+}
+
+.project-card img {
+  height: 230px;
+}
+
+.card-info {
+  padding: 20px;
+}
+
+.tag {
+  display: inline-block;
+  font-size: 10px;
+  font-weight: 800;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+
+.tag.pink {
+  background-color: #ffe0e5;
+}
+
+.tag.green {
+  background-color: #d9f3e5;
+}
+
+.tag.yellow {
+  background-color: #fff0bd;
+}
+
+.card-info h3 {
+  font-size: 18px;
+  margin-bottom: 6px;
+}
+
+.card-info p {
+  font-size: 13px;
+  color: #756b83;
+}
+
+/* 자기소개 */
+.about {
+  background-color: #dff4e8;
+}
+
+.about-box {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.about-box h2 {
+  color: #302744;
+}
+
+.about-box > p:not(.eyebrow) {
+  color: #5c586a;
+  margin-bottom: 15px;
+}
+
+/* 연락처 */
+.contact {
+  text-align: center;
+  background-color: #ffe2d8;
+}
+
+.contact > p:not(.eyebrow) {
+  margin-bottom: 25px;
+  color: #665c76;
+}
+
+/* 하단 */
+.footer {
+  background-color: #302744;
+  color: white;
+  text-align: center;
+  padding: 22px;
+  font-size: 12px;
+}
+
+/* 태블릿 및 모바일 */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav {
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 55px 6%;
+  }
+
+  .hero-image {
+    max-width: 100%;
+  }
+
+  .hero-image img {
+    height: 300px;
+  }
+
+  .section {
+    padding: 60px 6%;
+  }
+
+  .project-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px;
+  }
+
+  .project-card img {
+    height: 190px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 17px;
+  }
+
+  .nav {
+    gap: 12px;
+  }
+
+  .nav a {
+    font-size: 12px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card img {
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+
+/* VIDEO PORTFOLIO */
+.video-section {
+  background-color: #fff0e8;
+}
+
+.video-card {
+  max-width: 850px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 8px 24px #30274412;
+}
+
+.video-card video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background-color: #302744;
+}
+
